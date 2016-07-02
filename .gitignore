@@ -1,0 +1,4 @@
+# ignore webstorm files
+.idea/
+# ignore installed modules
+node_modules/

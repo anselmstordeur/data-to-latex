@@ -1,0 +1,26 @@
+{
+  "name": "data-to-latex",
+  "version": "0.1.0",
+  "description": "A data to latex converter. Great to visualize your data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha --reporter spec test/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anselmstordeur/data-to-latex.git"
+  },
+  "keywords": [
+    "latex"
+  ],
+  "author": "Anselm Stordeur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anselmstordeur/data-to-latex/issues"
+  },
+  "homepage": "https://github.com/anselmstordeur/data-to-latex#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "readline": "^1.3.0"
+  }
+}
