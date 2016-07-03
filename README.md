@@ -6,10 +6,12 @@ Dependencies:
 - npm
 - ES6 compatible Javascript ([compatibility table](https://kangax.github.io/compat-table/es6/))
 
-Usage: 
+Usage:  
+
+install using `npm install data-to-latex`
 ```javascript
 const dataToLatex = require('data-to-latex');
-console.log(dataToLatex.matrix.formattedTabular([0, 2, 3, 'string'], 2, 'My Caption'));
+dataToLatex.matrix.formattedTabular([0, 2, 3, 'string'], 2, {caption: 'My Caption'});
 ```
 Would return Latex Result:
 ```
@@ -20,11 +22,4 @@ Would return Latex Result:
 \end{tabular}\)
 ```
 
-### Documentation:
-- [matrix](docs/matrix.md)
-
-### Contribute:
-- [Git](https://github.com/anselmstordeur/data-to-latex.git)
-
-### LICENSE
-- [License](LICENSE)
+### [Wiki](https://github.com/anselmstordeur/data-to-latex/wiki)
