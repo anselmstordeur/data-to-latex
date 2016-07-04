@@ -1,3 +1,4 @@
 module.exports = {
-  matrix: require('./matrix')
+  matrix: require('./matrix'),
+  basic: require('./basic')
 };

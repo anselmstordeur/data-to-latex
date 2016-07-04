@@ -8,7 +8,7 @@ const assert = require('assert');
  * @param {string} [options.caption] - a nice caption for the tabular
  * @param {boolean[]} [options.hLines] - an array which elements say if a horizontal line should be printed in top of a row. To get a fully closed tabular the array has to be filled with (rows + 1) true statements.
  * @param {boolean[]} [options.vLines] - an array which elements say if a vertical line should be printed left of a column. To get a fully closed tabular the array has to be filled with (columns + 1) true statements.
- * @returns {string} - Latex Tabular
+ * @returns {string} Latex Tabular
  */
 
 function formattedTabular(matrix, width, options) {
