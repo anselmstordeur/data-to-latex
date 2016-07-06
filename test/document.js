@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Document = require('../document').Document;
+const Document = require('../index').Document;
 
 'use strict';
 

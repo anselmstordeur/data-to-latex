@@ -76,6 +76,4 @@ class Document {
   }
 }
 
-module.exports = {
-  Document: Document
-};
+module.exports = Document;
