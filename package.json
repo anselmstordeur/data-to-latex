@@ -1,6 +1,6 @@
 {
   "name": "data-to-latex",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A data to latex converter. Great to visualize your data.",
   "main": "index.js",
   "scripts": {
