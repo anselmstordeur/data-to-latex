@@ -34,6 +34,15 @@ describe('Basic simple wrapping, formatting syntax', function () {
       });
     });
 
+    it('should trow error on undeclare caption', function () {
+      try {
+        basic.tableWrap('sdfsfasdf');
+        throw new Error('No error thrown');
+      }catch (err){
+        assert.strictEqual(err.message, 'caption is undefined');
+      }
+    })
+
     it('should throw error on undefined caption', function () {
       let types = [undefined, null, NaN];
       types.forEach(function (type) {

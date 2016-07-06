@@ -1,5 +1,5 @@
 module.exports = {
-  matrix: require('./matrix'),
-  basic: require('./basic'),
+  formattedTabular: require('./matrix').formattedTabular,
+  tableWrap: require('./basic').tableWrap,
   Document: require('./document')
 };
