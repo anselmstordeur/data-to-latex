@@ -146,5 +146,12 @@ Pdf file: (Note the sub-tabular in the Measurements column)
 ![alt text](https://raw.githubusercontent.com/wiki/anselmstordeur/data-to-latex/pdf2.png)
 
 
-|[Wiki](https://github.com/anselmstordeur/data-to-latex/wiki)|[GitHub](https://github.com/anselmstordeur/data-to-latex/)|
-|---|---|
+### Documentation:
+- [Document](https://github.com/anselmstordeur/data-to-latex/wiki/document)
+- [basic](https://github.com/anselmstordeur/data-to-latex/wiki/basic)
+- [matrix](https://github.com/anselmstordeur/data-to-latex/wiki/matrix)
+
+### Project
+- [Home](https://github.com/anselmstordeur/data-to-latex/wiki)
+- [Contribute](https://github.com/anselmstordeur/data-to-latex/wiki/contribute)
+- [License](https://github.com/anselmstordeur/data-to-latex/blob/master/LICENSE)
