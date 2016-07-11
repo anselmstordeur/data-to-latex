@@ -4,7 +4,7 @@
   "description": "A data to latex converter. Great to visualize your data.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/_mocha --reporter spec test/*"
+    "test": "eslint . && ./node_modules/mocha/bin/_mocha --reporter spec test/*"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/anselmstordeur/data-to-latex#readme",
   "devDependencies": {
-    "mocha": "^2.5.3",
-    "readline": "^1.3.0"
+    "eslint": "^3.0.1",
+    "mocha": "^2.5.3"
   }
 }

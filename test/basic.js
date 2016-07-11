@@ -1,7 +1,7 @@
 const assert = require('assert');
 const basic = require('../basic');
 
-"use strict";
+'use strict';
 
 describe('Basic simple wrapping, formatting syntax', function () {
 
@@ -25,43 +25,31 @@ describe('Basic simple wrapping, formatting syntax', function () {
     it('should throw error on undefined input', function () {
       let types = [undefined, null, NaN];
       types.forEach(function (type) {
-        try {
+        assert.throws(function () {
           basic.tableWrap(type, '');
-          throw new Error('no Error thrown');
-        }catch (err){
-          assert.strictEqual(err.message, 'input is undefined');
-        }
+        }, /input is undefined/);
       });
     });
 
     it('should trow error on undeclare caption', function () {
-      try {
+      assert.throws(function () {
         basic.tableWrap('sdfsfasdf');
-        throw new Error('No error thrown');
-      }catch (err){
-        assert.strictEqual(err.message, 'caption is undefined');
-      }
-    })
+      }, /caption is undefined/);
+    });
 
     it('should throw error on undefined caption', function () {
       let types = [undefined, null, NaN];
       types.forEach(function (type) {
-        try {
+        assert.throws(function () {
           basic.tableWrap('', type);
-          throw new Error('no Error thrown');
-        }catch (err){
-          assert.strictEqual(err.message, 'caption is undefined');
-        }
+        }, /caption is undefined/);
       });
     });
 
     it('should throw error on caption of type object', function () {
-      try {
+      assert.throws(function () {
         basic.tableWrap('', {key: 'foo', value: 'bar'});
-        throw new Error('no Error thrown');
-      }catch (err){
-        assert.strictEqual(err.message, 'caption is of type object');
-      }
+      }, /caption is of type object/);
     });
 
     it('should wrap a table around empty string', function () {

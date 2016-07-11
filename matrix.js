@@ -74,7 +74,7 @@ function formattedTabular(matrix, width, options) {
     // if item is last of row
     if((index + 1) % width === 0 || index === (arr.length - 1)){
       if(typeof options === 'object' && Array.isArray(options.hLines) && options.hLines[row]){
-        lineEnd += ' \\\\ \\hline'
+        lineEnd += ' \\\\ \\hline';
       }else {
         lineEnd = (((index + 1) < arr.length) ? ' \\\\' : ''); // but not last of matrix
       }

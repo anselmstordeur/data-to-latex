@@ -12,7 +12,7 @@ const assert = require('assert');
 function tableWrap(input, caption, options) {
   // make an exception for the assert function, because we want to allow empty strings
   if(arguments.length < 2){
-    throw new Error('caption is undefined')
+    throw new Error('caption is undefined');
   }else if(input !== ''){
     assert.ok(input, 'input is undefined');
   }else if(caption !== ''){

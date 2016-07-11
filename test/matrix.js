@@ -1,7 +1,7 @@
 const assert = require('assert');
 const matrix = require('../matrix');
 
-"use strict";
+'use strict';
 
 describe('Converts Matrix in a Latex Tabular', function () {
 
@@ -21,42 +21,31 @@ describe('Converts Matrix in a Latex Tabular', function () {
     });
 
     it('should throw error if matrix is undefined', function () {
-      try {
+      assert.throws(function () {
         matrix.formattedTabular(null, 2);
-        throw new Error('no Error thrown');
-      } catch (err) {
-        assert.strictEqual(err.message, 'Matrix is undefined');
-      }
+      }, /Matrix is undefined/);
     });
 
     it('should throw error if matrix is empty', function () {
-      try {
+      assert.throws(function () {
         matrix.formattedTabular([], 1);
-        throw new Error('no Error thrown');
-      }catch (err){
-        assert.strictEqual(err.message, 'Matrix is empty');
-      }
+      }, /Matrix is empty/);
     });
 
     it('should throw error if width is undefined', function () {
-      try {
+      assert.throws(function () {
         matrix.formattedTabular([1, 2], NaN);
-        throw new Error('no Error thrown');
-      }catch (err){
-        assert.strictEqual(err.message, 'width is undefined');
-      }
+      }, /width is undefined/);
     });
 
     it('should throw error if width is bigger than matrix', function () {
-      try {
+      assert.throws(function () {
         matrix.formattedTabular([1, 2], 3);
-        throw new Error('no Error thrown');
-      }catch (err){
-        assert.strictEqual(err.message, 'width is bigger than matrix');
-      }
+
+      }, /width is bigger than matrix/);
     });
 
-    it('should respond with a well formatted Tabulor on valid input', function () {1
+    it('should respond with a well formatted Tabulor on valid input', function () {
       assert.strictEqual(matrix.formattedTabular([0, 0, 0, 0], 2),
 `\\begin{tabular}{ll}
 0 & 0 \\\\
