@@ -4,7 +4,7 @@
   "description": "A data to latex converter. Great to visualize your data.",
   "main": "index.js",
   "scripts": {
-    "test": "eslint . && ./node_modules/mocha/bin/_mocha --reporter spec test/*"
+    "test": "./node_modules/eslint/bin/eslint.js . && ./node_modules/mocha/bin/_mocha --reporter spec test/*"
   },
   "repository": {
     "type": "git",
